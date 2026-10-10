@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mock-rest-server"
+version = "1.0.0"
+description = "Dynamic mock REST API generator and chaos network simulator"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Afzalbek", email = "afzalbek-dev@users.noreply.github.com"}]
+
+[project.scripts]
+mock-rest = "mock_server.cli:main"
